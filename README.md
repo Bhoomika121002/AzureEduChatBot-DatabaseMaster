@@ -12,5 +12,7 @@ In my project, I made extensive use of Microsoft Azure services to build an educ
 
 EduDB Chatbot is a simple chatbot for answering all the questions related to Database and the database services used on the Microsoft Azure Platform. Using Azure Cognitive Services provided by Microsoft Azure and website created by using google sites, makes this amazing chatbot unique. All you have to do is simple ask my chatbot what you want to know.
 
+## TECHNOLOGIES USED 
+
 
 
