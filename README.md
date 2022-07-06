@@ -39,7 +39,7 @@ Lastly, I've used google sites for creating my Database website, in which I have
 
 
 ## Project Link:
-
+https://sites.google.com/view/dbmschatbot/home 
 
 
 *This repository contains all the information related to the project.
