@@ -35,6 +35,7 @@ Lastly, I've used google sites for creating my Database website, in which I have
 
 ## Background working of Azure Cognitive Services:
 
+https://github.com/Bhoomika121002/AzureEduChatBot-DatabaseMaster/issues/1#issue-1296561528
 
 
 
