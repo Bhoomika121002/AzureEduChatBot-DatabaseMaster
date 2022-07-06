@@ -29,6 +29,7 @@ In this project, I have tried to use these following Azure Cognitive Services in
 7.	Web App Bot: The infrastructure necessary for a bot to access secured resources is provided by the Azure Bot resource. Additionally, it enables the user to speak with the bot through a variety of channels.
 
 •	Google Sites
+
 Lastly, I've used google sites for creating my Database website, in which I have deployed my Azure EduDB-Chatbot. Google Sites is a free website builder byGoogle. You can create websites with collaborators by giving another Google user edit access. Google Sites are compatible with other Google services like Docs, Sheets, and Slides.
 
 
