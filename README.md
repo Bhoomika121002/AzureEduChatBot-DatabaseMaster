@@ -37,6 +37,11 @@ Lastly, I've used google sites for creating my Database website, in which I have
 
 ![architecture-commerce-chatbot](https://user-images.githubusercontent.com/78655015/177655216-0b18b7bf-cbad-48a4-a9c5-975de2b55894.png)
 
+Here, in the above diagram, explains how cognitive services work in background.
+
+With the help of Azure QnA maker we have created an knowledge base, then this knowledge base is connected to our azure chatbot and this chat bot is then embedded to our google site Database Master --> Client Device sends input to the Bot --> Azure Language understanding understands the client queries and automatically chooses an knowledge base and hence finds the similar answer and sends the output.
+
+
 ## Screenshots:
 
 
