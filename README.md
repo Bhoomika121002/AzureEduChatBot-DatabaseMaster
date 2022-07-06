@@ -35,3 +35,11 @@ Lastly, I've used google sites for creating my Database website, in which I have
 
 ## Background working of Azure Cognitive Services:
 
+
+
+
+## Project Link:
+
+
+
+*This repository contains all the information related to the project.
