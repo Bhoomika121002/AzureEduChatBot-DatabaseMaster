@@ -1,0 +1,39 @@
+Concurrency controlling techniques ensure that multiple transactions are executed simultaneously while maintaining the ACID properties of the transactions and serializability in the schedules.
+
+Locking Based Concurrency Control Protocols
+Locking-based concurrency control protocols use the concept of locking data items. A lock is a variable associated with a data item that determines whether read/write operations can be performed on that data item. Generally, a lock compatibility matrix is used which states whether a data item can be locked by two transactions at the same time.
+Locking-based concurrency control systems can use either one-phase or two-phase locking protocols.
+One-phase Locking Protocol
+In this method, each transaction locks an item before use and releases the lock as soon as it has finished using it. This locking method provides for maximum concurrency but does not always enforce serializability.
+Two-phase Locking Protocol
+In this method, all locking operations precede the first lock-release or unlock operation. The transaction comprise of two phases. In the first phase, a transaction only acquires all the locks it needs and do not release any lock. This is called the expanding or the growing phase. In the second phase, the transaction releases the locks and cannot request any new locks. This is called the shrinking phase.
+Every transaction that follows two-phase locking protocol is guaranteed to be serializable. However, this approach provides low parallelism between two conflicting transactions.
+Timestamp Concurrency Control Algorithms
+Timestamp-based concurrency control algorithms use a transaction’s timestamp to coordinate concurrent access to a data item to ensure serializability. A timestamp is a unique identifier given by DBMS to a transaction that represents the transaction’s start time.
+These algorithms ensure that transactions commit in the order dictated by their timestamps. An older transaction should commit before a younger transaction, since the older transaction enters the system before the younger one.
+Timestamp-based concurrency control techniques generate serializable schedules such that the equivalent serial schedule is arranged in order of the age of the participating transactions.
+Some of timestamp based concurrency control algorithms are −
+Basic timestamp ordering algorithm.
+Conservative timestamp ordering algorithm.
+Multiversion algorithm based upon timestamp ordering.
+Timestamp based ordering follow three rules to enforce serializability −
+Access Rule − When two transactions try to access the same data item simultaneously, for conflicting operations, priority is given to the older transaction. This causes the younger transaction to wait for the older transaction to commit first.
+Late Transaction Rule − If a younger transaction has written a data item, then an older transaction is not allowed to read or write that data item. This rule prevents the older transaction from committing after the younger transaction has already committed.
+Younger Transaction Rule − A younger transaction can read or write a data item that has already been written by an older transaction.
+Optimistic Concurrency Control Algorithm
+In systems with low conflict rates, the task of validating every transaction for serializability may lower performance. In these cases, the test for serializability is postponed to just before commit. Since the conflict rate is low, the probability of aborting transactions which are not serializable is also low. This approach is called optimistic concurrency control technique.
+In this approach, a transaction’s life cycle is divided into the following three phases −
+Execution Phase − A transaction fetches data items to memory and performs operations upon them.
+Validation Phase − A transaction performs checks to ensure that committing its changes to the database passes serializability test.
+Commit Phase − A transaction writes back modified data item in memory to the disk.
+Concurrency Control in Distributed Systems
+In this section, we will see how the above techniques are implemented in a distributed database system.
+Distributed Two-phase Locking Algorithm
+The basic principle of distributed two-phase locking is same as the basic two-phase locking protocol. However, in a distributed system there are sites designated as lock managers. A lock manager controls lock acquisition requests from transaction monitors. In order to enforce co-ordination between the lock managers in various sites, at least one site is given the authority to see all transactions and detect lock conflicts.
+Depending upon the number of sites who can detect lock conflicts, distributed two-phase locking approaches can be of three types −
+Centralized two-phase locking − In this approach, one site is designated as the central lock manager. All the sites in the environment know the location of the central lock manager and obtain lock from it during transactions.
+Primary copy two-phase locking − In this approach, a number of sites are designated as lock control centers. Each of these sites has the responsibility of managing a defined set of locks. All the sites know which lock control center is responsible for managing lock of which data table/fragment item.
+Distributed two-phase locking − In this approach, there are a number of lock managers, where each lock manager controls locks of data items stored at its local site. The location of the lock manager is based upon data distribution and replication.
+Distributed Timestamp Concurrency Control
+In a centralized system, timestamp of any transaction is determined by the physical clock reading. But, in a distributed system, any site’s local physical/logical clock readings cannot be used as global timestamps, since they are not globally unique. So, a timestamp comprises of a combination of site ID and that site’s clock reading.
+For implementing timestamp ordering algorithms, each site has a scheduler that maintains a separate queue for each transaction manager. During transaction, a transaction manager sends a lock request to the site’s scheduler. The scheduler puts the request to the corresponding queue in increasing timestamp order. Requests are processed from the front of the queues in the order of their timestamps, i.e. the oldest first.

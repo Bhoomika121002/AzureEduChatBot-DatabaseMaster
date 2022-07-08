@@ -1,0 +1,30 @@
+Azure offers a choice of fully managed relational, NoSQL and in-memory databases, spanning proprietary and open-source engines, to fit the needs of modern app developers. Infrastructure management—including scalability, availability and security—is automated, saving you time and money. Focus on building applications while Azure managed databases make your job simpler by surfacing performance insights through embedded intelligence, scaling without limits and managing security threats. 
+
+Azure SQL Database: Managed, intelligent SQL in the cloud
+
+
+Azure SQL Managed Instance: Managed, always up-to-date SQL instance in the cloud
+
+
+SQL Server on Virtual Machines: Migrate your SQL workloads to Azure while maintaining complete SQL Server compatibility and operating system-level access
+
+
+Azure Database for PostgreSQL: Build scalable, secure and fully managed enterprise-ready apps on open-source PostgreSQL, scale out single-node PostgreSQL with high performance or migrate PostgreSQL and Oracle workloads to the cloud. 
+
+
+Azure Database for MySQL: Deliver high availability and elastic scaling to open-source mobile and web apps with a managed community MySQL database service or migrate MySQL workloads to the cloud
+
+
+Azure Database for MariaDB: Deliver high availability and elastic scaling to open-source mobile and web apps with a managed community MariaDB database service
+
+
+Azure Cosmos DB: Build applications with guaranteed low latency and high availability anywhere, at any scale or migrate Cassandra, MongoDB and other NoSQL workloads to the cloud
+
+
+Azure Cache for Redis: Power fast, scalable applications with an open-source-compatible in-memory data store
+
+
+Azure Database Migration Service: Accelerate your transition to the cloud using a simple, self-guided migration process
+
+
+Azure Managed Instance for Apache Cassandra: Modernise existing Cassandra data clusters and apps and enjoy flexibility and freedom with managed instance service
