@@ -44,7 +44,40 @@ With the help of Azure QnA maker we have created an knowledge base, then this kn
 
 ## Screenshots:
 
+Step 1: Created an Azure Resource Group named "QnABotDBMS”
+![image](https://user-images.githubusercontent.com/78655015/178069663-b1fb75a8-c8a8-4eb1-b1fe-6b64a34b178a.png)
 
+Step 2: Created Azure QnA Maker
+![image](https://user-images.githubusercontent.com/78655015/178069715-4b8b1f4c-5f75-4d55-abd1-508861128ee9.png)
+
+Step 3: Created an Azure Knowledge Base:
+![image](https://user-images.githubusercontent.com/78655015/178069767-6a6d546e-6396-4d1e-8200-75a5f1e52a05.png)
+![image](https://user-images.githubusercontent.com/78655015/178069812-b9488882-49a3-444a-93d4-a78fef5ac1b3.png)
+![image](https://user-images.githubusercontent.com/78655015/178069831-fc78cf7a-1c12-4580-bcae-03d95cab9ad8.png)
+![image](https://user-images.githubusercontent.com/78655015/178069855-cf6a0eeb-81eb-4993-acec-0b9759bf5cb5.png)
+![image](https://user-images.githubusercontent.com/78655015/178069876-c792387f-9020-4250-84c7-31803429b064.png)
+
+Step 4: Train the Bot using test feature in Knowledge Base
+![image](https://user-images.githubusercontent.com/78655015/178069925-89387bd7-717c-4641-af00-f5712f82bef2.png)
+
+Step 5: Publishing the Bot by creating Azure Bot
+![image](https://user-images.githubusercontent.com/78655015/178069965-0abf3d9d-7061-4fcb-8394-a2f1c01bda5f.png)
+![image](https://user-images.githubusercontent.com/78655015/178069996-89b1dbbf-2251-4b87-804f-d2f01a20c44c.png)
+
+Step 6: Created a Web App Bot
+![image](https://user-images.githubusercontent.com/78655015/178070037-a077f1ef-53b2-483e-8f46-0ec06c9734bd.png)
+![image](https://user-images.githubusercontent.com/78655015/178070058-4c432a83-2191-48a7-9993-0e9124fe9c9c.png)
+
+Step 7: Copying the Embedded code and Secret Key to Google Site to enable our chatbot to work
+![image](https://user-images.githubusercontent.com/78655015/178070102-0d513641-1c02-479f-9452-82ed11d5ed03.png)
+
+Step 8: Embedded the code in the Google sites and then published the content 
+![image](https://user-images.githubusercontent.com/78655015/178070157-048e8e47-4b23-4979-bd9a-e7296dd7c4eb.png)
+
+Step 9: Testing on Google Sites if the bot is working or not
+![image](https://user-images.githubusercontent.com/78655015/178070190-a9987a39-1147-4ad1-930f-2d6e4a4bf996.png)
+![image](https://user-images.githubusercontent.com/78655015/178070216-44936000-f349-4b87-ae7b-e4f37ee76888.png)
+![image](https://user-images.githubusercontent.com/78655015/178070238-48c2630c-8d6c-49c7-9776-ea65988977e5.png)
 
 
 
